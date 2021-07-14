@@ -293,6 +293,9 @@ footer{
 
 /* media query for tablet devices */
 @media only screen and (max-width: 688px) {
+    body {
+        overflow-x: hidden;
+    }
     header{
         display: none;
     }
