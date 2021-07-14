@@ -53,6 +53,10 @@ button:hover {
     padding-left: 0;
 }
 
+.cta {
+    margin-right: 150px;
+}
+
 nav ul li {
     list-style: none;
     padding-right: 42px;
@@ -64,54 +68,41 @@ nav ul li a {
     font-size: 16px;
     font-weight: 500;
 }
+
 /* header area styling end here  */
 
 /* hero banner area styling start  */
+
 .hero-banner {
-    height: 470px;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 150px 86px 150px;
-}
-
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.hero-info {
-    width: 470px;
-    margin-left: 0px;
-    padding-right: 110px;
-}
-
-.hero-title h1 {
-    font-size: 60px;
-    font-weight: bold;
-    color: white;
-    padding-bottom: 0;
-}
-
-.hero-image {
-    width: 480px;
-
+    background-color: var(--background-color)
+    
 }
 
 .hero-image img {
-    width: 100%;
+    width: 90%;
+    border-radius: 0px;
 }
 
-/* .btn button {
-    width: 160px;
-    height: 44px;
-    background-color: var(--button-color);
-} */
+.hero-details h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: white;
+    font-size: 50px;
+}
+
+.hero-details p {
+    font-size: 16px;
+    font-weight: 500px;
+    color: white;
+}
+
+.hero-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 110px 150px 110px 150px;
+    
+}
+
 /* hero banner area styling end  */
 
 /* player card styling start  */
@@ -278,7 +269,7 @@ footer{
     grid-gap: 15px;
 }
 
-i {
+.link i {
     color: gray;
 }
 
@@ -302,35 +293,25 @@ i {
     header{
         display: none;
     }
-    .banner {
+    
+    /* hero banner area styling start  */
+    
+    .hero-details h1 {
+        font-size: 44px;
+    }
+    
+    .hero-details p {
+        font-size: 16px;
+        font-weight: 500px;
+    }
+    
+    .hero-card {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }
-    .hero-banner {
-        height: 100vh;
-        background-color: var(--background-color);
+        grid-template-rows: repeat(2,1fr);
+        padding: 0px 20px 50px 40px;
     }
     
-    .hero-info {
-        text-align: left;
-        margin-left: 200px;
-    }
-    
-    .hero-title h1 {
-        font-size: 30px;
-        font-weight: bold;
-        color: white;
-        padding-bottom: 0;
-    }
-    
-    .hero-image {
-        width: 350px;
-        padding-left: 180px;
-    }
-    
-    .hero-image img {
-        width: 100%;
-    }
     /* player card styling start  */
 
     .players {
@@ -339,8 +320,6 @@ i {
         padding: 30px;
         grid-gap: 20px;
     }
-    /* player card styling start  */
-    /* player card styling start  */
 
     .match {
         height: 470px;
@@ -380,15 +359,54 @@ i {
     /* courses style end  here  */
     /* form section start (this section is added as extra task in assignment) */
 
-.form-input{
-    display: block;
-    text-align: center;
-}
+    .form-input{
+        display: block;
+        text-align: center;
+    }
 
-#contact-section{
-    margin: 40px;
-}
+    #contact-section{
+        margin: 40px;
+    }
 
-/* form section end */
+    /* form section end */
+    /* footer styling */
+    footer{
+        padding-top: 20px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .branding {
+        width: 200px;
+    }
+    
+    .branding img {
+        width: 100%;
+    }
+    
+    .icon {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+    }
+    
+    i {
+        color: gray;
+    }
+    
+    .link {
+        width: 32px;
+        height: 32px;
+        background-color: rgba(189, 185, 185, 0.897);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 }
