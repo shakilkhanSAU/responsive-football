@@ -286,12 +286,8 @@ footer{
     align-items: center;
 }
 
+/* footer section styling end here */
 
-
-
-/* footer section styling start here */
-
-/* media query for tablet devices */
 @media only screen and (max-width: 688px) {
     body {
         overflow-x: hidden;
@@ -301,7 +297,6 @@ footer{
     }
     
     /* hero banner area styling start  */
-    
     .hero-details h1 {
         font-size: 44px;
     }
@@ -327,6 +322,7 @@ footer{
         grid-gap: 20px;
     }
 
+    /* match area styling */
     .match {
         height: 470px;
         margin: 0;
@@ -346,9 +342,10 @@ footer{
     .match-image {
         width: 340px;
         padding-bottom: 30px;
-
     }
-    /* courese style  */
+    /* end of match area  */
+
+    /* course style (this section is added as extra task in assignment) */
 
     .academy{
         height: 400px;
@@ -414,5 +411,121 @@ footer{
         align-items: center;
     }
 
+}
 
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    button {
+        width: 120px;
+        height: 44px;
+        background-color: var(--button-color);
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 0px;
+        border: none;
+        border-radius: 5px;
+        transition: all ease 0.4s;
+    }
+    .nav-links {
+        height: 70px;
+        background-color: #2D25A0;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-links ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 50px;
+        padding-left: 0;
+    }
+    
+    .cta {
+        margin-right: 50px;
+    }
+    
+    nav ul li {
+        list-style: none;
+        padding-right: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .hero-details h1 {
+        font-size: 40px;
+    }
+    
+    .hero-details {
+        width: 30%;
+        font-size: 16px;
+        font-weight: 500px;
+    }
+    
+    .hero-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1,1fr);
+        padding: 100px 40px 100px 60px;
+        height: fit-content;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+        grid-gap: 20px;
+    }
+    
+    /* match area styling */
+    .match {
+        height: 470px;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 200px;
+        height: 100vh;
+    }
+
+    .match-info {
+        width: 470px;
+        margin-left: 0px;
+        padding-right: 110px;
+    }
+
+    .match-image {
+        width: 340px;
+        padding-bottom: 30px;
+    }
+    /* end of match area  */
+
+    /* course area styling start  */
+    .academy{
+        height: 400px;
+        padding: 20px 50px;
+        background-color: none;
+        height: fit-content;
+    }
+    
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* course area styling end  */
 }
