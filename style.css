@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
 /* common style section start */
 body {
     margin: 0;
@@ -13,8 +15,8 @@ body {
 }
 
 button {
-    width: 120px;
-    height: 40px;
+    width: 130px;
+    height: 45px;
     background-color: var(--button-color);
     color: white;
     font-size: 16px;
@@ -28,14 +30,12 @@ button {
 button:hover {
     background-color: #fffefe;
     color: #E02C6D;
-    border: 2px solid #E02C6D;
     font-weight: 600;
-
 }
+
 /* common style section end */
-
-
 /* header area styling start here  */
+
 .nav-links {
     height: 70px;
     background-color: #2D25A0;
@@ -61,7 +61,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1p6x;
+    font-size: 16px;
     font-weight: 500;
 }
 /* header area styling end here  */
@@ -177,4 +177,218 @@ nav ul li a {
 
 .match-image img {
     width: 100%;
+}
+
+/* courses style start  here  */
+
+.academy{
+    height: 400px;
+    padding: 40px 200px 130px 200px;
+    background-color: rgb(255, 206, 231);
+}
+
+.courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.course{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px .5px gray;
+}
+.courses .course img{
+    width: 100%;
+    border-radius: 5px;
+}
+.course-info{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color: rgb(163, 163, 163);
+}
+/* courses style end  here  */
+
+/* form section start (this section is added as extra task in assignment) */
+
+.form-input{
+    display: block;
+    text-align: center;
+}
+
+#contact-section{
+    margin: 40px 200px;
+}
+
+#form{
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 2px rgb(189, 188, 188);
+    padding: 30px 80px;
+    background-color: rgb(212, 234, 255);
+
+}
+input{
+    height: 40px;
+    width: 70%;
+    margin-bottom: -5px;
+    border-radius: 4px;
+    font-size: 22px;
+    border-width: 1px;
+}
+button{
+    border: thin;
+    margin: 20px auto 15px auto;
+}
+
+/* form section end */
+
+/* footer section styling start here */
+
+footer{
+    padding-top: 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.branding {
+    width: 350px;
+}
+
+.branding img {
+    width: 100%;
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+i {
+    color: gray;
+}
+
+.link {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(189, 185, 185, 0.897);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* footer section styling start here */
+
+/* media query for tablet devices */
+@media only screen and (max-width: 688px) {
+    header{
+        display: none;
+    }
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hero-banner {
+        height: 100vh;
+        background-color: var(--background-color);
+    }
+    
+    .hero-info {
+        text-align: left;
+        margin-left: 200px;
+    }
+    
+    .hero-title h1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 0;
+    }
+    
+    .hero-image {
+        width: 350px;
+        padding-left: 180px;
+    }
+    
+    .hero-image img {
+        width: 100%;
+    }
+    /* player card styling start  */
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+        grid-gap: 20px;
+    }
+    /* player card styling start  */
+    /* player card styling start  */
+
+    .match {
+        height: 470px;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 200px;
+        height: 100vh;
+    }
+
+    .match-info {
+        width: 470px;
+        margin-left: 0px;
+        padding-right: 110px;
+    }
+
+    .match-image {
+        width: 340px;
+        padding-bottom: 30px;
+
+    }
+    /* courese style  */
+
+    .academy{
+        height: 400px;
+        padding: 20px 50px;
+        background-color: none;
+        height: fit-content;
+    }
+    
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /* courses style end  here  */
+    /* form section start (this section is added as extra task in assignment) */
+
+.form-input{
+    display: block;
+    text-align: center;
+}
+
+#contact-section{
+    margin: 40px;
+}
+
+/* form section end */
+
 }
