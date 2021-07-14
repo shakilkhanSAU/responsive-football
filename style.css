@@ -182,8 +182,10 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-
+.course-details h2 a {
+    text-decoration: none;
 }
 .course{
     margin: 10px;
